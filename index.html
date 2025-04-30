@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>localStorage 例</title>
+</head>
+<body>
+  <h1 id="greeting"></h1>
+  <input type="text" id="username" placeholder="名前を入力">
+  <button onclick="saveName()">保存</button>
+
+  <script>
+    // ページ読み込み時に localStorage から名前を取得
+    const savedName = localStorage.getItem('username');
+    if (savedName) {
+      document.getElementById('greeting').textContent = `ようこそ、${savedName}さん！`;
+    }
+
+    // 名前を保存する関数
+    function saveName() {
+      const name = document.getElementById('username').value;
+      if (name) {
+        localStorage.setItem('username', name);
+        document.getElementById('greeting').textContent = `ようこそ、${name}さん！`;
+      }
+    }
+  </script>
+</body>
+</html>
