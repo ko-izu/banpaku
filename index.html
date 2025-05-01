@@ -59,7 +59,7 @@ if ("serviceWorker" in navigator) {
   
 
   L.control.locate({
-    position: 'topleft', 
+    position: 'topright', 
     strings: {
       title: "現在地を表示" 
     },
@@ -69,7 +69,7 @@ if ("serviceWorker" in navigator) {
 
 
   var imageUrl = 'https://www.expo2025.or.jp/wp/wp-content/uploads/NRPV-MAPv5.png';
-  var imageBounds = [[34.645572,135.373796],[34.655693,135.391010]];
+  var imageBounds = [[34.6455824,135.3737704],[34.6557112,135.3910265]];
 
 
   L.imageOverlay(imageUrl, imageBounds).addTo(map);
@@ -96,7 +96,7 @@ L.geoJSON(geojsonData, {
     if (feature.properties && feature.properties.name) {
       layer.bindTooltip(feature.properties.name, {
         permanent: true,   
-        direction: 'auto', 
+        direction: 'top', 
         className: 'my-label'
       });
    }
