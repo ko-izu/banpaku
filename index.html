@@ -4,6 +4,24 @@
  <meta charset="utf-8" name ="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <title>banpaku</title>
 　<link rel="manifest" href="./manifest.webmanifest" />
+ <!-- ServiceWorker -->
+<script>
+if ("serviceWorker" in navigator) {
+	window.addEventListener("load", function () {
+		navigator.serviceWorker.register("./sw.js").then(
+			function (registration) {
+				console.log(
+					"ServiceWorker registration successful with scope: ",
+					registration.scope
+				);
+			},
+			function (err) {
+				console.log("ServiceWorker registration failed: ", err);
+			}
+		);
+	});
+}
+</script>
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
 
   <link rel="stylesheet" href="https://unpkg.com/leaflet.locatecontrol/dist/L.Control.Locate.min.css" />
