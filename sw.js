@@ -10,7 +10,8 @@ var resources = [
   "https://unpkg.com/leaflet.locatecontrol/dist/L.Control.Locate.min.css",
   "https://unpkg.com/leaflet@1.9.4/dist/leaflet.js",
   "https://unpkg.com/leaflet.locatecontrol/dist/L.Control.Locate.min.js",
-  "https://cdn.jsdelivr.net/npm/leaflet-imageoverlay-rotated@0.2.1/Leaflet.ImageOverlay.Rotated.min.js"
+  "https://cdn.jsdelivr.net/npm/leaflet-imageoverlay-rotated@0.2.1/Leaflet.ImageOverlay.Rotated.min.js",
+  'https://www.expo2025.or.jp/wp/wp-content/uploads/NRPV-MAPv5.png'
 ];
 
 // キャッシュ追加
