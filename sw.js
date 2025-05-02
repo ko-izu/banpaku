@@ -5,7 +5,12 @@ var DISP_VERSION = 'ca-d-v1';
 // キャッシュの対象にするディレクトリ（css/jsは個別で追加）
 var resources = [
   '/',
-  '/img'
+  '/img',
+  "https://unpkg.com/leaflet@1.9.4/dist/leaflet.css",
+  "https://unpkg.com/leaflet.locatecontrol/dist/L.Control.Locate.min.css",
+  "https://unpkg.com/leaflet@1.9.4/dist/leaflet.js",
+  "https://unpkg.com/leaflet.locatecontrol/dist/L.Control.Locate.min.js",
+  "https://cdn.jsdelivr.net/npm/leaflet-imageoverlay-rotated@0.2.1/Leaflet.ImageOverlay.Rotated.min.js"
 ];
 
 // キャッシュ追加
