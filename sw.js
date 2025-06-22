@@ -4,14 +4,15 @@ var DISP_VERSION = 'ca-d-v1';
 
 // キャッシュの対象にするディレクトリ（css/jsは個別で追加）
 var resources = [
-  '/',
-  '/img',
-  "https://unpkg.com/leaflet@1.9.4/dist/leaflet.css",
-  "https://unpkg.com/leaflet.locatecontrol/dist/L.Control.Locate.min.css",
-  "https://unpkg.com/leaflet@1.9.4/dist/leaflet.js",
-  "https://unpkg.com/leaflet.locatecontrol/dist/L.Control.Locate.min.js",
-  "https://cdn.jsdelivr.net/npm/leaflet-imageoverlay-rotated@0.2.1/Leaflet.ImageOverlay.Rotated.min.js",
-  'https://www.expo2025.or.jp/wp/wp-content/uploads/NRPV-MAPv5.png'
+    '/banpaku/index.html',
+    '/banpaku/manifest.webmanifest',
+    '/banpaku/sw.js',
+    "https://unpkg.com/leaflet@1.9.4/dist/leaflet.js",
+    "https://unpkg.com/leaflet@1.9.4/dist/leaflet.css",
+    "https://unpkg.com/leaflet.locatecontrol/dist/L.Control.Locate.min.css",
+    "https://unpkg.com/leaflet.locatecontrol/dist/L.Control.Locate.min.js",
+    "https://cdn.jsdelivr.net/npm/leaflet-imageoverlay-rotated@0.2.1/Leaflet.ImageOverlay.Rotated.min.js",
+    'https://www.expo2025.or.jp/wp/wp-content/uploads/0508_JPMAP_NR_v10.png'
 ];
 
 // キャッシュ追加
